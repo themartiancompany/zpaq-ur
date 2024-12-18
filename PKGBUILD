@@ -63,8 +63,8 @@ build()
   msg \
     "${CXXFLAGS}"
   "${CXX}" \
-    "$CXXFLAGS" \
-    "$LDFLAGS" \
+    $CXXFLAGS \
+    $LDFLAGS \
     -fPIC \
     -shared \
     -Dunix \
@@ -75,8 +75,8 @@ build()
   msg \
     'Building zpaq'
   "${CXX}" \
-    "$CXXFLAGS" \
-    "$LDFLAGS" \
+    ${CXXFLAGS} \
+    ${LDFLAGS} \
     -pthread \
     -Dunix \
     -DNDEBUG \

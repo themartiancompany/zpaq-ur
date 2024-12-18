@@ -13,6 +13,7 @@ _pkgdesc=(
   "library and utilities."
   "Based on the PAQ compression algorithm"
 )
+pkgdesc="${_pkgdesc[*]}"
 _http="http://mattmahoney.net"
 url="${_http}/dc/${_pkg}.html"
 pkgver=7.15

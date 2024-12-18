@@ -58,9 +58,13 @@ build()
   fi
   msg \
     'Building libzpaq'
+  msg \
+    "CXX flags:"
+  msg \
+    "${CXXFLAGS}"
   "${CXX}" \
-    "${CXXFLAGS}" \
-    "${LDFLAGS}" \
+    "$CXXFLAGS" \
+    "$LDFLAGS" \
     -fPIC \
     -shared \
     -Dunix \
@@ -71,8 +75,8 @@ build()
   msg \
     'Building zpaq'
   "${CXX}" \
-    "${CXXFLAGS}" \
-    "${LDFLAGS}" \
+    "$CXXFLAGS" \
+    "$LDFLAGS" \
     -pthread \
     -Dunix \
     -DNDEBUG \
